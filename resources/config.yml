@@ -1,0 +1,8 @@
+# Select the command that will
+# be executed from the player.
+# Credits: @hexyyy 
+# Website: laststyle.tk
+#
+#
+command: "help"
+
