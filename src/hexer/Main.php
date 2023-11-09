@@ -5,7 +5,7 @@ namespace hexer;
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\player\PlayerJoinEvent;
-use pocketmine\Player;
+use pocketmine\player\Player;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\command\CommandExecutor;
@@ -13,12 +13,12 @@ use pocketmine\command\ConsoleCommandSender;
 
 class Main extends PluginBase implements Listener{
 
-    public function onEnable(){
+    public function onEnable(): void{
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->saveDefaultConfig();
     }
 
-    public function onJoin(PlayerJoinEvent $event)
+    public function onJoin(PlayerJoinEvent $event): bool
     {
        
         $player = $event->getPlayer();
