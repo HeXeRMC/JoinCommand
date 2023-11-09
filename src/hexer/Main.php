@@ -18,7 +18,7 @@ class Main extends PluginBase implements Listener{
         $this->saveDefaultConfig();
     }
 
-    public function onJoin(PlayerJoinEvent $event): bool
+    public function onJoin(PlayerJoinEvent $event)
     {
        
         $player = $event->getPlayer();
