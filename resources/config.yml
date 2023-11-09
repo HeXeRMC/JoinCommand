@@ -1,8 +1,8 @@
 # Select the command that will
 # be executed from the player.
-# Credits: @hexyyy 
+# Credits: @hexyyy fixed by @darknesslocalhost
 # Website: laststyle.tk
+# 
 #
-#
-command: "help"
+command: "help" # the command to execute the join event, for example say 
 
